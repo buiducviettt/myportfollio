@@ -1,6 +1,9 @@
 import Header from './Header';
 // eslint-disable-next-line react/prop-types
-const DefaultLayout = ({ children }) => {
+type Props = {
+  children: React.ReactNode;
+};
+const DefaultLayout:React.FC<Props> = ({ children }) => {
   return (
     <div className="App">
       <Header />
