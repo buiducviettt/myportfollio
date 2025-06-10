@@ -1,8 +1,8 @@
 @import '../../core/base';
-@import 'tailwindcss';
+@import '../../core/_font.scss';
 :root {
-  --primary-color: #ff3b5c;
-  --full-background: #252836;
+  --primary-color: #251c31;
+  --full-background: #000;
   --primary-background: rgba(255, 255, 255, 0.12);
   --fixed-padding: 0 26px;
   --color-hover: rgb(255, 59, 92);
@@ -12,7 +12,7 @@
 }
 img {
   width: 100%;
-  height: auto;
+  height: auto !important;
   object-fit: cover;
 }
 * {
@@ -23,6 +23,9 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+h1 {
+  @include fz-50;
 }
 h1,
 h2,
@@ -43,9 +46,37 @@ li {
 
 /* Áp dụng font cho toàn bộ body */
 body {
-  font-family: 'IBM Plex Sans', TikTokFont, Arial, Tahoma, PingFangSC,
-    sans-serif;
+  font-family: 'Preahvihear', sans-serif;
   font-size: 1.6rem;
+  font-style: normal;
   line-height: 1.5;
   background-color: var(--full-background);
+}
+// header
+.header {
+  padding: 1.6rem 0;
+  background: #1a0b2e;
+  box-shadow: 0px 6px 22px -3px rgba(0, 0, 0, 0.1);
+  .container {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    .nav_bar {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        li {
+          color: white;
+        }
+      }
+    }
+  }
+}
+// khoảng cách body
+.body_content {
+  margin-top: 20rem;
+}
+.sec_gap {
+  margin-top: 10rem;
 }

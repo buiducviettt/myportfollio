@@ -1,0 +1,54 @@
+.card_experience {
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    padding: 3.2rem;
+    gap: 3.2rem;
+    .card_experience_left {
+      max-width: 100px;
+      max-height: 100px;
+      img {
+        animation: pop 3s infinite ease-in-out;
+      }
+    }
+    .button_learn {
+      color: white;
+      background: #2c1250;
+      padding: 1.2rem 2.4rem;
+      border-radius: 20px;
+      border: 1px solid #693b93;
+    }
+  }
+  border-top: 5px solid #4f228d;
+  border-radius: 15px;
+  background: linear-gradient(
+    96deg,
+    #130428 0.58%,
+    #251043 16.32%,
+    #38126d 29.33%,
+    #261045 45.66%,
+    #190634 54.44%
+  );
+  background-size: 200% 100%; /* để có đủ không gian cho animation */
+  animation: lightning 8s infinite linear;
+  box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
+}
+@keyframes lightning {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+@keyframes pop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

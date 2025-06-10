@@ -13,11 +13,12 @@ html {
 
 body {
   font-family: var(--font-pri);
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.55;
   font-weight: var(--fw);
   color: var(--c-txt);
   overflow: hidden auto;
+  letter-spacing: 1px;
 
   @media screen and (min-width: 2000px) {
     font-size: 17px;
@@ -61,13 +62,13 @@ textarea {
   padding-top: var(--sz-hd);
 }
 
-.container {
-  width: 100%;
-  max-width: 123rem;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 var(--pd-container);
-}
+// .container {
+//   width: 100%;
+//   max-width: 123rem;
+//   height: 100%;
+//   margin: 0 auto;
+//   padding: 0 var(--pd-container);
+// }
 
 .sec-container {
   width: 100%;
