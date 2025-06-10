@@ -31,7 +31,7 @@ const Home = () => {
             </div>
             <div className="short_intro_content d-flex" data-aos="fade-right">
               <div className="avatar_left">
-                <img src={Images.avt} alt="" />
+                <img style={{ borderRadius: '50%' }} src={Images.avt} alt="" />
               </div>
               <div className="content_right">
                 <p>I used to be a Front-End Website Developer who</p>

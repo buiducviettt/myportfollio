@@ -130,3 +130,14 @@ $gap_content: 3.2rem;
     }
   }
 }
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}

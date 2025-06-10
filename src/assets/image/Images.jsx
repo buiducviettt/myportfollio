@@ -1,5 +1,5 @@
 import logo from './logo/Logo.svg';
-import avt from './avt.png';
+import avt from './avt.jpg';
 import arrow from './Arrow.svg';
 import monalogo from './monalogo.png';
 import icon1 from './icon1.png';
