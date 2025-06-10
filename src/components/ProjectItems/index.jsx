@@ -1,7 +1,16 @@
 import './projectItems.scss';
-const ProjectItems = ({ title, desc, images, reverse = false, className }) => {
+import { Link } from 'react-router-dom';
+const ProjectItems = ({
+  title,
+  desc,
+  images,
+  reverse = false,
+  className,
+  dataAos,
+  link,
+}) => {
   return (
-    <div className={`featured_project_item ${className}`}>
+    <div className={`featured_project_item ${className}`} data-aos={dataAos}>
       <div className="container">
         <div className="row">
           {reverse ? (
@@ -14,6 +23,9 @@ const ProjectItems = ({ title, desc, images, reverse = false, className }) => {
                 <div className="desc">
                   <div className="wrapper">
                     <p>{desc}</p>
+                    <Link style={{ color: 'white' }} to={link} target="_blank">
+                      Here is the link
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -38,6 +50,9 @@ const ProjectItems = ({ title, desc, images, reverse = false, className }) => {
                 <div className="desc desc_reverse">
                   <div className="wrapper">
                     <p>{desc}</p>
+                    <Link target="_blank" style={{ color: 'white' }} to={link}>
+                      Here is the link
+                    </Link>
                   </div>
                 </div>
               </div>

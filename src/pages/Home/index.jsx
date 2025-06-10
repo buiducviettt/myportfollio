@@ -115,14 +115,15 @@ const Home = () => {
                 I'm currently looking to join a cross-functional team that
                 values improving people's lives through accessible design{' '}
               </p>
-              <div className="technology_content">
+              <div className="technology_content" data-aos="fade-up">
                 <div className="technology_icons d-flex justify-content-center align-items-center gap-4">
                   <Icon image={Images.reacticon} />
-                  <Icon image={Images.reacticon} />
-                  <Icon image={Images.reacticon} />
-                  <Icon image={Images.reacticon} />
+                  <Icon image={Images.figma} />
+                  <Icon image={Images.node} />
+                  <Icon image={Images.js} />
+                  <Icon image={Images.css} />
                 </div>
-                <div className="skills_circle">
+                <div className="skills_circle" data-aos="fade-up">
                   <img src={Images.skills} alt="" />
                 </div>
               </div>
@@ -130,27 +131,31 @@ const Home = () => {
           </div>
           <div className="sec_gap featured_projects" data-aos="fade-up">
             <ProjectItems
+              dataAos="fade-in"
               className="project_item"
-              title="Example Project"
+              title="Eccomerce website"
               desc=" A web app for visualizing personalized Spotify data. View your
 top artists, top tracks, recently played tracks, and detailed audio
 information about each track. Create and save new playlists of
 recommended tracks based on your existing playlists and more."
-              images={Images.project1}
+              images={Images.ecom}
               reverse={true}
+              link="https://buiducvietecomweb.netlify.app/"
             />
             <ProjectItems
+              dataAos="fade-in"
               className="project_item"
-              title="Example Project"
+              title="E-learning Website"
               desc=" A web app for visualizing personalized Spotify data. View your
 top artists, top tracks, recently played tracks, and detailed audio
 information about each track. Create and save new playlists of
 recommended tracks based on your existing playlists and more."
-              images={Images.project1}
+              images={Images.elearn}
               reverse={false}
+              link="https://elearnwebbyviet.netlify.app/"
             />
           </div>
-          <footer className="sec_gap footer">
+          <footer className="sec_gap footer" data-aos="fade-up">
             <Footer />
           </footer>
         </div>

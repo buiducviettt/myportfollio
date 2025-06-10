@@ -124,17 +124,9 @@ $gap_content: 3.2rem;
       }
     }
   }
-}
-
-// 💫 Animation nhấp nháy ánh sáng
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.3);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translate(-50%, -50%) scale(1);
+  .technology {
+    .technology_content {
+      margin-top: $gap_content;
+    }
   }
 }

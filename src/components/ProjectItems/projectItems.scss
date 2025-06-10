@@ -8,7 +8,7 @@
       position: relative;
       left: 10rem;
       top: 5rem;
-      z-index: 3;
+      z-index: 3333;
       background: radial-gradient(
         151.92% 127.02% at 15.32% 21.04%,
         rgba(105, 59, 147, 1) 0%,
@@ -42,6 +42,7 @@
       }
     }
     &::before {
+      pointer-events: none;
       content: '';
       position: absolute;
       top: 50%;

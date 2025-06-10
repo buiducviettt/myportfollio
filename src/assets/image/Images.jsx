@@ -8,8 +8,20 @@ import icon3 from './icon3.png';
 import icon4 from './icon4.jpeg';
 import reacticon from './reacticon.png';
 import skills from './Skills.svg';
+import node from './node.png';
+import figma from './figma.png';
+import css from './css.png';
+import js from './js.png';
 import project1 from './project.png';
+import ecom from './ecom.png';
+import elearn from './elearning.png';
 const Images = {
+  ecom,
+  elearn,
+  js,
+  css,
+  node,
+  figma,
   project1,
   skills,
   reacticon,
