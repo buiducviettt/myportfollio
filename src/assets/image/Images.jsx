@@ -15,7 +15,11 @@ import js from './js.png';
 import project1 from './project.png';
 import ecom from './ecom.png';
 import elearn from './elearning.png';
+import truongphuc from './truongphuc.png';
+import foodapp from './foodapp.png';
 const Images = {
+  foodapp,
+  truongphuc,
   ecom,
   elearn,
   js,

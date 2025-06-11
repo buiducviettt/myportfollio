@@ -6,9 +6,15 @@ import CardExperience from '../../components/CardExperience';
 import Icon from '../../components/Icon';
 import ProjectItems from '../../components/ProjectItems';
 import Footer from '../../layouts/Default Layout/Footer';
+import useScrollToSection from '../../hooks/useScrollToSection';
 const Home = () => {
+  const [aboutRef, scrollToAbout] = useScrollToSection();
+  const [contactRef, scrollToContact] = useScrollToSection();
   return (
-    <DefaultLayout>
+    <DefaultLayout
+      onAboutClick={scrollToAbout}
+      onContactClick={scrollToContact}
+    >
       <div className="home_page">
         <div className="container">
           <div className="sec_gap short_intro">
@@ -44,7 +50,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="sec_gap intro_details" data-aos="fade-up">
+          <div
+            className="sec_gap intro_details"
+            data-aos="fade-up"
+            ref={aboutRef}
+          >
             <div className="intro_details_title">
               <h1>
                 <Typewriter
@@ -134,10 +144,7 @@ const Home = () => {
               dataAos="fade-in"
               className="project_item"
               title="Eccomerce website"
-              desc=" A web app for visualizing personalized Spotify data. View your
-top artists, top tracks, recently played tracks, and detailed audio
-information about each track. Create and save new playlists of
-recommended tracks based on your existing playlists and more."
+              desc=" A modern online store for showcasing and selling fashion items, allowing users to browse collections, view product details, and make secure purchases."
               images={Images.ecom}
               reverse={true}
               link="https://buiducvietecomweb.netlify.app/"
@@ -146,16 +153,35 @@ recommended tracks based on your existing playlists and more."
               dataAos="fade-in"
               className="project_item"
               title="E-learning Website"
-              desc=" A web app for visualizing personalized Spotify data. View your
-top artists, top tracks, recently played tracks, and detailed audio
-information about each track. Create and save new playlists of
-recommended tracks based on your existing playlists and more."
+              desc=" A digital learning platform offering online courses, interactive exercises, and progress tracking to help users study efficiently and practice various subjects."
               images={Images.elearn}
               reverse={false}
               link="https://elearnwebbyviet.netlify.app/"
             />
+            <ProjectItems
+              dataAos="fade-in"
+              className="project_item"
+              title="Company Introduction Website"
+              desc=" A corporate website designed to present a traditional silk business, highlighting its history, production process, and high-quality silk products."
+              images={Images.truongphuc}
+              reverse={true}
+              link="https://truongphuc.netlify.app/"
+            />
+            <ProjectItems
+              dataAos="fade-in"
+              className="project_item"
+              title="Food App Management"
+              desc=" A web-based application for managing food orders, menus, inventory, and delivery, aimed at streamlining operations for restaurants or food services."
+              images={Images.foodapp}
+              reverse={false}
+              link="https://ducvietfoodapp.netlify.app/"
+            />
           </div>
-          <footer className="sec_gap footer" data-aos="fade-up">
+          <footer
+            className="sec_gap footer"
+            data-aos="fade-up"
+            ref={contactRef}
+          >
             <Footer />
           </footer>
         </div>
