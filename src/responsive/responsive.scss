@@ -1,0 +1,37 @@
+@import '../core/_mixin.scss';
+// với mobile
+@include max(768px) {
+  .header {
+    .container {
+      justify-content: center !important;
+    }
+  }
+  .home_page {
+    .short_intro {
+      &_content {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .avatar_left {
+        }
+      }
+    }
+  }
+  .featured_projects {
+    .row {
+      gap: 3rem;
+    }
+    .featured_project_item_right {
+      .desc {
+        position: relative !important;
+        top: 0;
+        left: 0;
+      }
+      .desc_reverse {
+        left: 0 !important;
+      }
+    }
+  }
+}

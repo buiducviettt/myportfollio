@@ -15,7 +15,7 @@ const ProjectItems = ({
         <div className="row">
           {reverse ? (
             <>
-              <div className="col col-md-6 featured_project_item_right">
+              <div className="col-12 col-md-6 col-sm-12 featured_project_item_right">
                 <div className="title">
                   <p style={{ color: '#9857D3' }}>Featured Project</p>
                   <h2>{title}</h2>
@@ -29,7 +29,7 @@ const ProjectItems = ({
                   </div>
                 </div>
               </div>
-              <div className="col col-md-6 featured_project_item_left">
+              <div className="col-12 col-md-6 col-sm-12 featured_project_item_left">
                 <div className="projects_img ">
                   <img className="project_img" src={images} alt="" />
                 </div>
@@ -37,12 +37,12 @@ const ProjectItems = ({
             </>
           ) : (
             <>
-              <div className="col col-md-6 featured_project_item_left">
+              <div className="col-12 col-md-6 col-sm-12 featured_project_item_left">
                 <div className="projects_img ">
                   <img className="project_img" src={images} alt="" />
                 </div>
               </div>
-              <div className="col col-md-6 featured_project_item_right">
+              <div className="col-12 col-md-6 col-sm-12 featured_project_item_right">
                 <div className="title title_reverse">
                   <p style={{ color: '#9857D3' }}>Featured Project</p>
                   <h2>{title}</h2>
