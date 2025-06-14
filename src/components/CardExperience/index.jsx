@@ -1,5 +1,19 @@
+import { useState } from 'react';
+import Modal from 'react-modal';
+Modal.setAppElement('#root');
 import './card.scss';
-const CardExperience = ({ icon, title, details }) => {
+const CardExperience = ({
+  icon,
+  title,
+  details,
+  exptitle,
+  expyear,
+  expdesc,
+}) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen((prev) => !prev);
+  };
   return (
     <div className="card_experience">
       <div className="card_experience_wrapper">
@@ -39,7 +53,22 @@ const CardExperience = ({ icon, title, details }) => {
         <div className="card_experience_right">
           <h2>{title}</h2>
           <p>{details}</p>
-          <button className="button_learn">Learn more</button>
+          <button className="button_learn" onClick={handleClick}>
+            Learn more
+          </button>
+          {isOpen && (
+            <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
+              <div className="popup_header experience_header">
+                <div className="experience_name  d-flex aligns-center justify-content-between">
+                  <p>{exptitle}</p>
+                  <p className="exp_year">{expyear}</p>
+                </div>
+                <div className="experience_desc">
+                  <p>{expdesc}</p>
+                </div>
+              </div>
+            </Modal>
+          )}
         </div>
       </div>
     </div>

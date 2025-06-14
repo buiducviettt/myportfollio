@@ -90,3 +90,18 @@ body {
 .sec_gap {
   margin-top: 10rem;
 }
+.ReactModalPortal {
+  .ReactModal__Content.ReactModal__Content--after-open {
+    max-height: 400px;
+    inset: 10rem !important;
+    background: var(--primary-color) !important;
+  }
+  .experience_name {
+    p {
+      font-size: 2.5rem;
+    }
+  }
+  p {
+    line-height: 2;
+  }
+}
