@@ -93,7 +93,7 @@ body {
 .ReactModalPortal {
   .ReactModal__Content.ReactModal__Content--after-open {
     max-height: 400px;
-    inset: 10rem !important;
+    inset: 10rem;
     background: var(--primary-color) !important;
   }
   .experience_name {
