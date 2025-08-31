@@ -19,6 +19,7 @@ body {
   color: var(--c-txt);
   overflow: hidden auto;
   letter-spacing: 1px;
+  overflow-x: hidden !important;
 
   @media screen and (min-width: 2000px) {
     font-size: 17px;
