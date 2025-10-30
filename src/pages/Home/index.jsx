@@ -151,7 +151,7 @@ Build ERD.
 Write BRD, SRS documents.
 "
                       icon={Images.icon4}
-                      title="UEH University"
+                      title="BKU"
                       details="Join startup teams to sell F&B software, Elearning and sample websites to strengthen sales skills and workflow of those software and websites."
                     />
                   </div>

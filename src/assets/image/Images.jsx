@@ -5,7 +5,7 @@ import monalogo from './monalogo.png';
 import icon1 from './icon1.png';
 import icon2 from './icon2.png';
 import icon3 from './icon3.png';
-import icon4 from './icon4.jpeg';
+import icon4 from './icon4.svg';
 import reacticon from './reacticon.png';
 import skills from './Skills.svg';
 import node from './node.png';
