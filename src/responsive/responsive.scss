@@ -34,4 +34,11 @@
       }
     }
   }
+  .ReactModal__Content--after-open {
+    max-height: 100% !important;
+    inset: 5rem !important;
+    .experience_name {
+      display: block !important;
+    }
+  }
 }
