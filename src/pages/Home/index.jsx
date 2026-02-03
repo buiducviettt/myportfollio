@@ -67,7 +67,10 @@ const Home = () => {
                   delaySpeed={1000000} // delay dài để tránh xóa
                 />
               </h1>
-              <p>Currently, I'm working at MONA MEDIA Company </p>
+              <p>
+                Currently, I'm working at MONA MEDIA Company as a Leader Product
+                Owner{' '}
+              </p>
             </div>
             <div className="intro_details_desc">
               <p>
